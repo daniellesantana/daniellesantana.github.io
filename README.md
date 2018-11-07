@@ -18,14 +18,10 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 	├── CONTRIBUTING.md
 	├── out/
 	├── src/
-	|   ├── icons/
+	|   ├── css/
+	|       ├── style.css
 	|   ├── assets/
-	|   |   ├── img/
-	|   |   ├── scripts/
-	|   |   |   └── script.js
-	|   |   └── styles/
-	|   |       ├── modules/
-	|   |       └── style.styl
+	|       ├── img/
 	├── package.json
 	├── projects.json
 	├── .editorconfig
