@@ -15,11 +15,13 @@ body {
 }
 
 .container {
-  width: 100%;
-  border-top: 0.8rem solid salmon;
-  border-right: 0.8rem solid salmon;
-  border-left: 0.8rem solid salmon;
+  border-top: 0.8rem solid #23A375;
+  border-right: 0.8rem solid #23A375;
+  border-left: 0.8rem solid #23A375;
   flex-grow: 1;
+  min-height:100%;
+  position: relative;
+  width: 100%;
 }
 
 header {
@@ -28,6 +30,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .titulo {
@@ -53,7 +63,7 @@ header {
 .quem-sou-eu {
   display: flex;
   justify-content: center;
-  margin-top: 3.2rem;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -63,18 +73,24 @@ header {
 }
 
 .texto-qse, {
-  width: 80rem;
+  width: 40rem;
   margin-left: 8rem;
 }
 
 .qse {
   text-align: justify;
-  padding: 3rem;
-  width: 100%;
+  padding: 2rem;
+  width: 40rem;
+}
+
+@media screen and (max-width: 400px) {
+  .qse {
+    width: 30rem;
+  }
 }
 
 .foto-qse {
-  width: 30%;
+  width: 20rem;
 }
 
 #star {
@@ -83,12 +99,12 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2.2rem;;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
-  padding-top: 5.4rem;
 }
 
 .icon {
@@ -99,9 +115,9 @@ header {
 }
 
 @media screen and (max-width: 550px) {
-  .social-media {
-    flex-direction: column;
-    margin: 0 auto;
+  .row1, .row2{
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -111,4 +127,5 @@ footer {
   color: #ffffff;
   padding: 0.5rem;
   background-color: black;
+  position: absolute;
 }
