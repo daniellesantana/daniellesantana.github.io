@@ -1,14 +1,8 @@
 body {
   font-family: 'Open Sans Condensed', sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100%;
   border-top: 0.5rem solid salmon;
   border-right: 0.5rem solid salmon;
   border-left: 0.5rem solid salmon;
-  position: relative;
-
-
   box-sizing: border-box;
 }
 
@@ -61,7 +55,7 @@ header {
 }
 
 .social-media {
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .icon {
@@ -74,6 +68,7 @@ header {
 footer {
   position: absolute;
   text-align: center;
+  align-content: flex-end;
   width: 100%;
   color: #ffffff;
   background-color: black;
