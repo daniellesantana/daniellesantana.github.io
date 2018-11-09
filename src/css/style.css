@@ -11,41 +11,42 @@ body {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .container {
+  width: 100%;
+  margin-top: 4rem;
+  margin: auto;
   border-top: 0.8rem solid #23A375;
   border-right: 0.8rem solid #23A375;
   border-left: 0.8rem solid #23A375;
-  margin: 0 auto;
   flex-grow: 1;
-  min-height:100%;
-  position: relative;
-  max-width: 700x;
-  width: 100%;
 }
 
 header {
-  max-width: 70rem;
-  margin: 0 auto;
+  margin-top: 4rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+
 }
 
-@media screen and (max-width: 400px) {
-  header {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-  }
+.header {
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 .titulo {
+  width: 55rem;
   text-transform: uppercase;
-  font-size: 2.2rem;
-  margin-right: 5.4rem;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px){
+  .titulo {
+    display: none;
+  }
 }
 
 #logo {
@@ -53,17 +54,24 @@ header {
   height: 15rem;
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .main {
   max-width: 70rem;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .quem-sou-eu {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -75,24 +83,33 @@ header {
 }
 
 .texto-qse, {
-  width: 40rem;
-  margin-left: 8rem;
+  width: 50rem;
 }
 
 .qse {
   text-align: justify;
   padding: 2rem;
-  width: 40rem;
+  padding-left: 7rem;
+  width: 100%;
+  max-width: 40rem;
 }
 
-@media screen and (max-width: 400px) {
+.qse > p {
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
   .qse {
-    width: 30rem;
+    width: 100%;
+    padding: 2rem;
   }
 }
 
 .foto-qse {
   width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #star {
@@ -107,7 +124,8 @@ header {
 .social-media {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-right: 1.5rem;
 }
 
 .icon {
@@ -125,9 +143,10 @@ header {
 }
 
 footer {
+  /*position: absolute;*/
   text-align: center;
+  align-content: flex-end;
   width: 100%;
   color: #ffffff;
-  padding: 0.5rem;
   background-color: black;
 }
